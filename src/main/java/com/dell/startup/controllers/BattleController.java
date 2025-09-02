@@ -51,10 +51,10 @@ public class BattleController {
         return battleService.finalizeAllReadyBattles();
     }
 
-    @PostMapping("/reset")
-    public ResponseEntity<String> resetBattles() {
-        battleService.resetBattles();
-        return ResponseEntity.ok("reseted battles");
-    }
+    // @PostMapping("/reset")
+    // public ResponseEntity<String> resetBattles() {
+    //     battleService.resetBattles();
+    //     return ResponseEntity.ok("reseted battles");
+    // }
 
 }

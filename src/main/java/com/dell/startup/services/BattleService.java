@@ -147,11 +147,11 @@ public class BattleService {
         return finalized;
     }
 
-    @Transactional
-    public void resetBattles() {
-        battleRepository.deleteAll();
-        entityManager.createNativeQuery("ALTER SEQUENCE battle_id_seq RESTART WITH 1").executeUpdate();
-    }
+    // @Transactional
+    // public void resetBattles() {
+    //     battleRepository.deleteAll();
+    //     entityManager.createNativeQuery("ALTER SEQUENCE battle_id_seq RESTART WITH 1").executeUpdate();
+    // }
 
     public List<Battle> getAllBattles() {
         return battleRepository.findAll();
